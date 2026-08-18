@@ -1,0 +1,4 @@
+dist/
+node_modules/
+package-lock.json
+CHAPTER_1_LABORATORY.md
