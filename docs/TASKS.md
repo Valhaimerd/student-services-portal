@@ -4,8 +4,7 @@ This is intentionally a small task list. Tasks are ordered by dependency; separa
 
 ## Current status
 
-- **Complete:** T1–T6 and T8.
-- **Partly complete:** T7 (local feature branch created; GitHub Issue pending) and T9 (checks and feature commit complete; remote push pending).
+- **Complete:** T1–T9.
 - **Waiting on student/instructor:** T10 and the personal/submission portions of T11.
 
 | ID  | Task                                                                          | Owner                      | Depends on | Done when                                                                             |

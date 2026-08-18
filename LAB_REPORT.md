@@ -6,7 +6,7 @@
 - **Student:** _Add name_
 - **Section:** _Add section_
 - **Date:** August 18, 2026
-- **GitHub repository URL:** _Add URL_
+- **GitHub repository URL:** <https://github.com/Valhaimerd/student-services-portal>
 
 ## 1. Development environment
 
@@ -58,7 +58,7 @@ A TypeScript interface is removed during compilation, so it cannot inspect data 
 ## 5. Git and GitHub evidence
 
 - **Initial commit:** `4d66f54` (`chore: initialize TypeScript project`)
-- **GitHub Issue URL:** _Add URL._
+- **GitHub Issue URL:** <https://github.com/Valhaimerd/student-services-portal/issues/1>
 - **Feature branch:** `feature/student-status`
 - **Feature commit:** `c06c18f` (`feat: add student status formatter`)
 - **Pull Request URL:** _Add URL._
