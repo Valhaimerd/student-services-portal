@@ -5,7 +5,8 @@ This is intentionally a small task list. Tasks are ordered by dependency; separa
 ## Current status
 
 - **Complete:** T1–T9.
-- **Waiting on student/instructor:** T10 and the personal/submission portions of T11.
+- **Partly complete:** T10 (draft Pull Request opened; independent review, approval, and merge pending).
+- **Waiting on student/instructor:** The remaining T10 review steps and the personal/submission portions of T11.
 
 | ID  | Task                                                                          | Owner                      | Depends on | Done when                                                                             |
 | --- | ----------------------------------------------------------------------------- | -------------------------- | ---------- | ------------------------------------------------------------------------------------- |

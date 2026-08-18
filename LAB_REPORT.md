@@ -61,8 +61,8 @@ A TypeScript interface is removed during compilation, so it cannot inspect data 
 - **GitHub Issue URL:** <https://github.com/Valhaimerd/student-services-portal/issues/1>
 - **Feature branch:** `feature/student-status`
 - **Feature commit:** `c06c18f` (`feat: add student status formatter`)
-- **Pull Request URL:** _Add URL._
-- **Related Issue linked in PR:** _Add evidence._
+- **Pull Request URL:** <https://github.com/Valhaimerd/student-services-portal/pull/2>
+- **Related Issue linked in PR:** PR #2 contains `Closes #1` in its Related Issue section.
 - **Code-review comment:** _Add screenshot or link._
 - **Revision after review, if required:** _Describe and link the commit._
 - **Merge/closed-Issue evidence:** _Add screenshot or links._
