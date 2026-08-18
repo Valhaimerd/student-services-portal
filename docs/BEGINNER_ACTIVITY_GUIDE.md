@@ -110,29 +110,21 @@ The saved AI response and review are in [`AI_STATUS_RECOMMENDATION.md`](AI_STATU
 
 Use these answers as a factual summary of the work, but make sure you can explain them in your own words:
 
-**AI Tool:**  
-OpenAI Codex
+**AI Tool:** OpenAI Codex
 
-**Prompt Used:**  
-The prompt shown above.
+**Prompt Used:** The prompt shown above.
 
-**AI Recommendation:**  
-Use explicit comparisons for `active` and `inactive`, return a readable label for each, and provide a safe fallback for unexpected runtime values.
+**AI Recommendation:** Use explicit comparisons for `active` and `inactive`, return a readable label for each, and provide a safe fallback for unexpected runtime values.
 
-**What I Understood:**  
-The function checks the value before returning a label. Explicit checks prevent an invalid value from being incorrectly treated as an inactive student.
+**What I Understood:** The function checks the value before returning a label. Explicit checks prevent an invalid value from being incorrectly treated as an inactive student.
 
-**Recommendation Accepted:**  
-The explicit mappings from `active` to `Active Student` and `inactive` to `Inactive Student`.
+**Recommendation Accepted:** The explicit mappings from `active` to `Active Student` and `inactive` to `Inactive Student`.
 
-**Recommendation Modified:**  
-The final function accepts `unknown` so it can safely demonstrate unexpected input received at runtime.
+**Recommendation Modified:** The final function accepts `unknown` so it can safely demonstrate unexpected input received at runtime.
 
-**Recommendation Rejected:**  
-A version that treated every value other than `active` as `inactive`.
+**Recommendation Rejected:** A version that treated every value other than `active` as `inactive`.
 
-**Reason:**  
-Unexpected external data should not be mislabeled. Returning `Unknown Student Status` makes the problem visible and handles it safely.
+**Reason:** Unexpected external data should not be mislabeled. Returning `Unknown Student Status` makes the problem visible and handles it safely.
 
 ## Git and GitHub workflow used
 
