@@ -3,8 +3,8 @@
 ## Project information
 
 - **Project:** Student Services Portal
-- **Student:** _Add name_
-- **Section:** _Add section_
+- **Student:** Emmanuel B. Magdaraog
+- **Section:** BSIT 4C
 - **Date:** August 18, 2026
 - **GitHub repository URL:** <https://github.com/Valhaimerd/student-services-portal>
 
@@ -93,35 +93,35 @@ Answer each question in three to five sentences in your own words.
 
 1. What was the most important difference between your previous programming workflow and the Git/GitHub workflow used in this laboratory?
 
-   _Your answer:_
+   Before, I usually worked directly on my code files without tracking every change. With Git and GitHub, I can save different versions of my work using commits. It also makes it easier to see what was changed and when. This workflow is more organized and safer.
 
 2. Why was the feature branch useful?
 
-   _Your answer:_
+   The feature branch allowed me to work on a new feature without changing the main branch. This helped keep the main project stable. I could test and improve my code before merging it. It is also useful when many developers are working on the same project.
 
 3. Did the AI provide any suggestion that required modification? Explain.
 
-   _Your answer:_
+   Yes, some AI suggestions needed small changes before I used them. I checked if the code followed the requirements and if it worked correctly. I also made sure that it did not use the any type. This showed me that AI suggestions should always be reviewed before using them.
 
 4. How did TypeScript help detect or prevent a possible problem?
 
-   _Your answer:_
+   TypeScript helped detect incorrect data types before running the program. For example, it can show an error if a string is used where a number is expected. It also helped limit the student status to "active" or "inactive". This can prevent simple coding mistakes.
 
 5. Why was runtime validation still necessary?
 
-   _Your answer:_
+   TypeScript only checks types while developing or compiling the program. Data coming from an API or another external source can still contain incorrect values. Runtime validation checks the actual data while the program is running. This helps prevent invalid data from causing problems.
 
 6. What information should never be placed in the repository?
 
-   _Your answer:_
+   Passwords, API keys, tokens, and other private information should never be placed in the repository. Files such as .env may contain this sensitive information. Generated folders like node_modules should also normally not be uploaded. These files should be included in .gitignore when needed.
 
 7. Which step in **Ask → Understand → Review → Modify → Test → Verify → Commit** was most important to you, and why?
 
-   _Your answer:_
+   For me, testing was the most important step. Testing helped me know if the code actually worked correctly. Even if the code looked correct, it could still contain errors. Testing gave me more confidence before committing the code.
 
 8. How could this workflow improve a group software-development project?
 
-   _Your answer:_
+   This workflow can help a group stay organized while working on the same project. Each member can work on a separate feature branch without affecting the main code. Pull Requests and code reviews also allow members to check each other's work. This can reduce mistakes and make teamwork easier.
 
 ## 8. Final submission checklist
 
