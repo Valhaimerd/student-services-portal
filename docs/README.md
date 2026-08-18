@@ -6,6 +6,7 @@ The original specification remains in [`CHAPTER_1_LABORATORY.md`](../CHAPTER_1_L
 2. [`02_GIT_AND_GITHUB_WORKFLOW.md`](02_GIT_AND_GITHUB_WORKFLOW.md) — commits, issue, feature branch, Pull Request, review, and merge.
 3. [`03_REPORT_AND_SUBMISSION.md`](03_REPORT_AND_SUBMISSION.md) — evidence, AI review, deliverables, reflection, and final checks.
 4. [`AI_STATUS_RECOMMENDATION.md`](AI_STATUS_RECOMMENDATION.md) — saved AI prompt, recommendation, review decision, and verification.
-5. [`TASKS.md`](TASKS.md) — small, ordered work items with ownership.
+5. [`VERIFICATION_RESULTS.md`](VERIFICATION_RESULTS.md) — recorded environment, command, runtime, Git, and GitHub evidence.
+6. [`TASKS.md`](TASKS.md) — small, ordered work items with ownership.
 
 If a detail differs, follow the original laboratory specification.

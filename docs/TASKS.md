@@ -4,9 +4,9 @@ This is intentionally a small task list. Tasks are ordered by dependency; separa
 
 ## Current status
 
-- **Complete:** T1–T9.
-- **Partly complete:** T10 (draft Pull Request opened; independent review, approval, and merge pending).
-- **Waiting on student/instructor:** The remaining T10 review steps and the personal/submission portions of T11.
+- **Complete:** T1–T9 and the agent-verifiable parts of T11.
+- **Partly complete:** T10 (Pull Request opened and made ready for review; independent review, approval, and merge pending).
+- **Waiting on student/instructor:** The remaining T10 review steps, development-environment screenshot, student identity, personal reflection answers, and submission.
 
 | ID  | Task                                                                          | Owner                      | Depends on | Done when                                                                             |
 | --- | ----------------------------------------------------------------------------- | -------------------------- | ---------- | ------------------------------------------------------------------------------------- |

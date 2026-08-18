@@ -16,7 +16,7 @@
 | Node.js | `v24.19.0`         |
 | npm     | `11.17.0`          |
 
-**Environment evidence:** Versions were verified in the terminal on August 18, 2026. Add a screenshot before submission.
+**Environment evidence:** Versions and command results are recorded in [`docs/VERIFICATION_RESULTS.md`](docs/VERIFICATION_RESULTS.md). Add a development-environment screenshot before submission.
 
 ## 2. TypeScript notes
 
@@ -53,7 +53,7 @@ A TypeScript interface is removed during compilation, so it cannot inspect data 
 | `.env`          | Environment files may contain secrets or machine-specific settings.                            |
 | `*.log`         | Log files are generated during execution and add machine-specific noise to commits.            |
 
-**Staging review evidence:** _Add `git status` output or screenshot showing ignored files were not staged._
+**Staging review evidence:** [`docs/VERIFICATION_RESULTS.md`](docs/VERIFICATION_RESULTS.md) records a clean `git status` and confirms that `dist/` and `node_modules/` are ignored.
 
 ## 5. Git and GitHub evidence
 
@@ -125,12 +125,12 @@ Answer each question in three to five sentences in your own words.
 
 ## 8. Final submission checklist
 
-- [ ] GitHub repository URL
+- [x] GitHub repository URL
 - [ ] Development-environment evidence
 - [x] `README.md`, `.gitignore`, `package.json`, `tsconfig.json`, ESLint config, and Prettier config
 - [x] TypeScript source, generic response examples, and runtime-validation examples
 - [x] Working check, lint, format, build, and run commands
 - [ ] GitHub Issue, feature branch, meaningful commits, Pull Request, and code review
-- [ ] AI prompt and response, review decision, and official verification source
+- [x] AI prompt and response, review decision, and official verification source
 - [ ] Eight reflection answers of three to five sentences each
 - [ ] Final repository and submission audit completed
