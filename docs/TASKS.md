@@ -2,6 +2,12 @@
 
 This is intentionally a small task list. Tasks are ordered by dependency; separate agents may handle the independent local work, but one agent should integrate and verify the final result.
 
+## Current status
+
+- **Complete:** T1–T6 and T8.
+- **Partly complete:** T7 (local feature branch created; GitHub Issue pending) and T9 (checks and feature commit complete; remote push pending).
+- **Waiting on student/instructor:** T10 and the personal/submission portions of T11.
+
 | ID  | Task                                                                          | Owner                      | Depends on | Done when                                                                             |
 | --- | ----------------------------------------------------------------------------- | -------------------------- | ---------- | ------------------------------------------------------------------------------------- |
 | T1  | Inspect tool versions and initialize the Node/TypeScript project              | Primary agent              | —          | Package files, `tsconfig`, and `src/` exist; versions are recorded                    |

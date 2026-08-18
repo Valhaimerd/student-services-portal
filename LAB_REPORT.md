@@ -60,7 +60,7 @@ A TypeScript interface is removed during compilation, so it cannot inspect data 
 - **Initial commit:** `4d66f54` (`chore: initialize TypeScript project`)
 - **GitHub Issue URL:** _Add URL._
 - **Feature branch:** `feature/student-status`
-- **Feature commit:** _Add commit hash or screenshot._
+- **Feature commit:** `c06c18f` (`feat: add student status formatter`)
 - **Pull Request URL:** _Add URL._
 - **Related Issue linked in PR:** _Add evidence._
 - **Code-review comment:** _Add screenshot or link._
@@ -127,9 +127,9 @@ Answer each question in three to five sentences in your own words.
 
 - [ ] GitHub repository URL
 - [ ] Development-environment evidence
-- [ ] `README.md`, `.gitignore`, `package.json`, `tsconfig.json`, ESLint config, and Prettier config
-- [ ] TypeScript source, generic response examples, and runtime-validation examples
-- [ ] Working check, lint, format, build, and run commands
+- [x] `README.md`, `.gitignore`, `package.json`, `tsconfig.json`, ESLint config, and Prettier config
+- [x] TypeScript source, generic response examples, and runtime-validation examples
+- [x] Working check, lint, format, build, and run commands
 - [ ] GitHub Issue, feature branch, meaningful commits, Pull Request, and code review
 - [ ] AI prompt and response, review decision, and official verification source
 - [ ] Eight reflection answers of three to five sentences each
