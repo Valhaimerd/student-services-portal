@@ -57,7 +57,7 @@ A TypeScript interface is removed during compilation, so it cannot inspect data 
 
 ## 5. Git and GitHub evidence
 
-- **Initial commit:** _Add commit hash or screenshot._
+- **Initial commit:** `4d66f54` (`chore: initialize TypeScript project`)
 - **GitHub Issue URL:** _Add URL._
 - **Feature branch:** `feature/student-status`
 - **Feature commit:** _Add commit hash or screenshot._
@@ -69,23 +69,23 @@ A TypeScript interface is removed during compilation, so it cannot inspect data 
 
 ## 6. AI-assisted development review
 
-- **AI tool:** _Add tool name._
-- **Prompt used:** _Paste the exact prompt._
-- **AI response/recommendation:** _Paste or link the saved response._
-- **What I understood:** _Explain the recommendation in your own words._
-- **Recommendation accepted:** _State what was used, or write “None.”_
-- **Recommendation modified:** _State what was changed, or write “None.”_
-- **Recommendation rejected:** _State what was not used, or write “None.”_
-- **Reason for the decision:** _Explain why the recommendation was accepted, modified, or rejected._
-- **Tests performed:** _Record active, inactive, and unexpected runtime-input results._
-- **Known limitations:** _Record any limitations, or write “None known.”_
+- **AI tool:** OpenAI Codex
+- **Prompt used:** “Suggest a TypeScript implementation for converting a student's active/inactive status into a readable label. Explain the implementation and include possible edge cases. Do not use the `any` type.”
+- **AI response/recommendation:** Saved in [`docs/AI_STATUS_RECOMMENDATION.md`](docs/AI_STATUS_RECOMMENDATION.md).
+- **What I understood:** Each supported value needs an explicit comparison. A separate fallback prevents an unexpected runtime value from being mislabeled as inactive.
+- **Recommendation accepted:** Explicit mappings for `active` and `inactive`.
+- **Recommendation modified:** The parameter accepts `unknown` so unexpected runtime input can be handled and demonstrated safely.
+- **Recommendation rejected:** Treating every value other than `active` as inactive.
+- **Reason for the decision:** External data can contain unsupported values even when the TypeScript model is correct, so a distinct fallback is safer.
+- **Tests performed:** `active` returned `Active Student`; `inactive` returned `Inactive Student`; `graduated` returned `Unknown Student Status`.
+- **Known limitations:** Unsupported inputs share one generic fallback message.
 
 ### Verification record
 
-- **Claim or code verified:** _Identify unfamiliar syntax, API, or behavior._
-- **Official source title:** _Add the documentation title._
-- **Official source URL:** _Add the URL._
-- **Verification result:** _Explain whether the source confirmed the recommendation and whether code was changed._
+- **Claim or code verified:** An `unknown` value can be safely narrowed with equality comparisons before use.
+- **Official source title:** TypeScript Handbook — Basic Types: Unknown
+- **Official source URL:** <https://www.typescriptlang.org/docs/handbook/basic-types.html#unknown>
+- **Verification result:** The official documentation confirmed the narrowing approach; no code change was required.
 
 ## 7. Reflection
 
