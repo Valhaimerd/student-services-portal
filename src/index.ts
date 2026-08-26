@@ -16,6 +16,18 @@ function formatStudent(student: Student): string {
   return `${student.id} - ${student.name} (${student.status})`;
 }
 
+function getStudentStatusLabel(status: unknown): string {
+  if (status === 'active') {
+    return 'Active Student';
+  }
+
+  if (status === 'inactive') {
+    return 'Inactive Student';
+  }
+
+  return 'Unknown Student Status';
+}
+
 function isStudent(value: unknown): value is Student {
   return (
     typeof value === 'object' &&
@@ -60,3 +72,7 @@ console.log(studentListResponse.data.map(formatStudent));
 for (const value of validationExamples) {
   console.log(isStudent(value) ? formatStudent(value) : 'Invalid student data');
 }
+
+console.log(getStudentStatusLabel('active'));
+console.log(getStudentStatusLabel('inactive'));
+console.log(getStudentStatusLabel('graduated'));

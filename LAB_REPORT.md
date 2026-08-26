@@ -3,10 +3,10 @@
 ## Project information
 
 - **Project:** Student Services Portal
-- **Student:** _Add name_
-- **Section:** _Add section_
+- **Student:** Emmanuel B. Magdaraog
+- **Section:** BSIT 4C
 - **Date:** August 18, 2026
-- **GitHub repository URL:** _Add URL_
+- **GitHub repository URL:** <https://github.com/Valhaimerd/student-services-portal>
 
 ## 1. Development environment
 
@@ -16,7 +16,7 @@
 | Node.js | `v24.19.0`         |
 | npm     | `11.17.0`          |
 
-**Environment evidence:** Versions were verified in the terminal on August 18, 2026. Add a screenshot before submission.
+**Environment evidence:** Versions and command results are recorded in [`docs/VERIFICATION_RESULTS.md`](docs/VERIFICATION_RESULTS.md). Add a development-environment screenshot before submission.
 
 ## 2. TypeScript notes
 
@@ -53,39 +53,39 @@ A TypeScript interface is removed during compilation, so it cannot inspect data 
 | `.env`          | Environment files may contain secrets or machine-specific settings.                            |
 | `*.log`         | Log files are generated during execution and add machine-specific noise to commits.            |
 
-**Staging review evidence:** _Add `git status` output or screenshot showing ignored files were not staged._
+**Staging review evidence:** [`docs/VERIFICATION_RESULTS.md`](docs/VERIFICATION_RESULTS.md) records a clean `git status` and confirms that `dist/` and `node_modules/` are ignored.
 
 ## 5. Git and GitHub evidence
 
-- **Initial commit:** _Add commit hash or screenshot._
-- **GitHub Issue URL:** _Add URL._
+- **Initial commit:** `4d66f54` (`chore: initialize TypeScript project`)
+- **GitHub Issue URL:** <https://github.com/Valhaimerd/student-services-portal/issues/1>
 - **Feature branch:** `feature/student-status`
-- **Feature commit:** _Add commit hash or screenshot._
-- **Pull Request URL:** _Add URL._
-- **Related Issue linked in PR:** _Add evidence._
+- **Feature commit:** `c06c18f` (`feat: add student status formatter`)
+- **Pull Request URL:** <https://github.com/Valhaimerd/student-services-portal/pull/2>
+- **Related Issue linked in PR:** PR #2 contains `Closes #1` in its Related Issue section.
 - **Code-review comment:** _Add screenshot or link._
 - **Revision after review, if required:** _Describe and link the commit._
 - **Merge/closed-Issue evidence:** _Add screenshot or links._
 
 ## 6. AI-assisted development review
 
-- **AI tool:** _Add tool name._
-- **Prompt used:** _Paste the exact prompt._
-- **AI response/recommendation:** _Paste or link the saved response._
-- **What I understood:** _Explain the recommendation in your own words._
-- **Recommendation accepted:** _State what was used, or write “None.”_
-- **Recommendation modified:** _State what was changed, or write “None.”_
-- **Recommendation rejected:** _State what was not used, or write “None.”_
-- **Reason for the decision:** _Explain why the recommendation was accepted, modified, or rejected._
-- **Tests performed:** _Record active, inactive, and unexpected runtime-input results._
-- **Known limitations:** _Record any limitations, or write “None known.”_
+- **AI tool:** OpenAI Codex
+- **Prompt used:** “Suggest a TypeScript implementation for converting a student's active/inactive status into a readable label. Explain the implementation and include possible edge cases. Do not use the `any` type.”
+- **AI response/recommendation:** Saved in [`docs/AI_STATUS_RECOMMENDATION.md`](docs/AI_STATUS_RECOMMENDATION.md).
+- **What I understood:** Each supported value needs an explicit comparison. A separate fallback prevents an unexpected runtime value from being mislabeled as inactive.
+- **Recommendation accepted:** Explicit mappings for `active` and `inactive`.
+- **Recommendation modified:** The parameter accepts `unknown` so unexpected runtime input can be handled and demonstrated safely.
+- **Recommendation rejected:** Treating every value other than `active` as inactive.
+- **Reason for the decision:** External data can contain unsupported values even when the TypeScript model is correct, so a distinct fallback is safer.
+- **Tests performed:** `active` returned `Active Student`; `inactive` returned `Inactive Student`; `graduated` returned `Unknown Student Status`.
+- **Known limitations:** Unsupported inputs share one generic fallback message.
 
 ### Verification record
 
-- **Claim or code verified:** _Identify unfamiliar syntax, API, or behavior._
-- **Official source title:** _Add the documentation title._
-- **Official source URL:** _Add the URL._
-- **Verification result:** _Explain whether the source confirmed the recommendation and whether code was changed._
+- **Claim or code verified:** An `unknown` value can be safely narrowed with equality comparisons before use.
+- **Official source title:** TypeScript Handbook — Basic Types: Unknown
+- **Official source URL:** <https://www.typescriptlang.org/docs/handbook/basic-types.html#unknown>
+- **Verification result:** The official documentation confirmed the narrowing approach; no code change was required.
 
 ## 7. Reflection
 
@@ -93,44 +93,44 @@ Answer each question in three to five sentences in your own words.
 
 1. What was the most important difference between your previous programming workflow and the Git/GitHub workflow used in this laboratory?
 
-   _Your answer:_
+   Before, I usually worked directly on my code files without tracking every change. With Git and GitHub, I can save different versions of my work using commits. It also makes it easier to see what was changed and when. This workflow is more organized and safer.
 
 2. Why was the feature branch useful?
 
-   _Your answer:_
+   The feature branch allowed me to work on a new feature without changing the main branch. This helped keep the main project stable. I could test and improve my code before merging it. It is also useful when many developers are working on the same project.
 
 3. Did the AI provide any suggestion that required modification? Explain.
 
-   _Your answer:_
+   Yes, some AI suggestions needed small changes before I used them. I checked if the code followed the requirements and if it worked correctly. I also made sure that it did not use the any type. This showed me that AI suggestions should always be reviewed before using them.
 
 4. How did TypeScript help detect or prevent a possible problem?
 
-   _Your answer:_
+   TypeScript helped detect incorrect data types before running the program. For example, it can show an error if a string is used where a number is expected. It also helped limit the student status to "active" or "inactive". This can prevent simple coding mistakes.
 
 5. Why was runtime validation still necessary?
 
-   _Your answer:_
+   TypeScript only checks types while developing or compiling the program. Data coming from an API or another external source can still contain incorrect values. Runtime validation checks the actual data while the program is running. This helps prevent invalid data from causing problems.
 
 6. What information should never be placed in the repository?
 
-   _Your answer:_
+   Passwords, API keys, tokens, and other private information should never be placed in the repository. Files such as .env may contain this sensitive information. Generated folders like node_modules should also normally not be uploaded. These files should be included in .gitignore when needed.
 
 7. Which step in **Ask → Understand → Review → Modify → Test → Verify → Commit** was most important to you, and why?
 
-   _Your answer:_
+   For me, testing was the most important step. Testing helped me know if the code actually worked correctly. Even if the code looked correct, it could still contain errors. Testing gave me more confidence before committing the code.
 
 8. How could this workflow improve a group software-development project?
 
-   _Your answer:_
+   This workflow can help a group stay organized while working on the same project. Each member can work on a separate feature branch without affecting the main code. Pull Requests and code reviews also allow members to check each other's work. This can reduce mistakes and make teamwork easier.
 
 ## 8. Final submission checklist
 
-- [ ] GitHub repository URL
+- [x] GitHub repository URL
 - [ ] Development-environment evidence
-- [ ] `README.md`, `.gitignore`, `package.json`, `tsconfig.json`, ESLint config, and Prettier config
-- [ ] TypeScript source, generic response examples, and runtime-validation examples
-- [ ] Working check, lint, format, build, and run commands
+- [x] `README.md`, `.gitignore`, `package.json`, `tsconfig.json`, ESLint config, and Prettier config
+- [x] TypeScript source, generic response examples, and runtime-validation examples
+- [x] Working check, lint, format, build, and run commands
 - [ ] GitHub Issue, feature branch, meaningful commits, Pull Request, and code review
-- [ ] AI prompt and response, review decision, and official verification source
+- [x] AI prompt and response, review decision, and official verification source
 - [ ] Eight reflection answers of three to five sentences each
 - [ ] Final repository and submission audit completed
